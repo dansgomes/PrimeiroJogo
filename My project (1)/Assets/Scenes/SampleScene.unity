@@ -3458,8 +3458,8 @@ GameObject:
   - component: {fileID: 593949944}
   - component: {fileID: 593949943}
   - component: {fileID: 593949942}
-  - component: {fileID: 593949946}
   - component: {fileID: 593949947}
+  - component: {fileID: 593949946}
   - component: {fileID: 593949948}
   m_Layer: 0
   m_Name: Player
@@ -3595,6 +3595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  runSpeed: 8
 --- !u!95 &593949947
 Animator:
   serializedVersion: 5
