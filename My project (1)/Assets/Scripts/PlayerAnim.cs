@@ -28,7 +28,15 @@ public class PlayerAnim : MonoBehaviour
     {
         if (player.direction.sqrMagnitude > 0)
         {
-            anim.SetInteger("transition", 1);
+            if (player.isRolling)
+            {
+                anim.SetTrigger("isRoll");
+            }
+            else
+            {
+                anim.SetInteger("transition", 1);
+            }
+            
         }
         else
         {
