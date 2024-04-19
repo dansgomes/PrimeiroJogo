@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
 {
     [SerializeField]private float speed;
     [SerializeField]private float runSpeed;
+    [SerializeField] private float rollSpeed;
 
     private Rigidbody2D rig;
 
@@ -82,11 +83,13 @@ public class Player : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(1))
         {
+            speed = rollSpeed;
             _isRolling = true;
         }
 
         if (Input.GetMouseButtonUp(1))
         {
+            speed = InitialSpeed;
             _isRolling = false;
         }
     }

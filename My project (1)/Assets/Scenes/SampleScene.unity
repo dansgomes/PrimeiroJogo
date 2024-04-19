@@ -3596,6 +3596,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   runSpeed: 8
+  rollSpeed: 12
 --- !u!95 &593949947
 Animator:
   serializedVersion: 5
