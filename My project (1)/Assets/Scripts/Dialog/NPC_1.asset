@@ -9,22 +9,34 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 92bfcbb65dec3b84982e6bca84134df0, type: 3}
   m_Name: NPC_1
   m_EditorClassIdentifier: Assembly-CSharp::NewBehaviourScript
   actor: {fileID: 4734921794969969107, guid: 61d4c67def4633549b1ec3bae76929e3, type: 3}
-  speakerSprite: {fileID: 48606179, guid: 4c9b7b25169a87143bf6a1e75cfc6bd8, type: 3}
-  sentence: "Ol\xE1, mundo!"
+  speakerSprite: {fileID: 0}
+  sentence: 
   dialogs:
-  - actorName: "Jo\xE3o"
+  - actorName: "Mo\xE7o"
+    profile: {fileID: -418448762, guid: d10356e5e76c2154482685cf19ed24d3, type: 3}
+    sentence:
+      portuguese: "Ol\xE1"
+      english: 
+      spanish: 
+  - actorName: "Her\xF3i"
+    profile: {fileID: 300572915, guid: 4c9b7b25169a87143bf6a1e75cfc6bd8, type: 3}
+    sentence:
+      portuguese: Tudo bem?
+      english: 
+      spanish: 
+  - actorName: "Mo\xE7o"
+    profile: {fileID: 1015812395, guid: d10356e5e76c2154482685cf19ed24d3, type: 3}
+    sentence:
+      portuguese: Tudo certo!
+      english: 
+      spanish: 
+  - actorName: "Her\xF3i"
     profile: {fileID: 48606179, guid: 4c9b7b25169a87143bf6a1e75cfc6bd8, type: 3}
     sentence:
-      portuguese: "Ol\xE1, mundo!"
-      english: Hello world
-      spanish: Hola
-  - actorName: 
-    profile: {fileID: 0}
-    sentence:
-      portuguese: 
+      portuguese: "Que \xF3timo!"
       english: 
       spanish: 
