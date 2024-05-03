@@ -19,6 +19,15 @@ public class DialogControl : MonoBehaviour
     private int index; //index das sentenças
     private string[] sentences;
 
+    public static DialogControl instance;
+
+    //awake é chamado antes de todos os Star() na hierarquia de execução de scripts
+    private void Awake()
+    {
+        instance = this;
+    }
+
+    //é chamado ao inicializar
     void Start()
     {
         
