@@ -132,6 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 63848334}
+  - component: {fileID: 63848335}
   m_Layer: 0
   m_Name: Dialog Control
   m_TagString: Untagged
@@ -154,6 +155,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &63848335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63848333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aafc20d98d5c6694b81c6834fe2ca4f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogObj: {fileID: 1931284108}
+  profileSprite: {fileID: 936253540}
+  speechText: {fileID: 1248212187}
+  actorNameText: {fileID: 0}
+  typingSpeed: 0.05
 --- !u!1 &447379465
 GameObject:
   m_ObjectHideFlags: 0
@@ -5852,9 +5870,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-
-'
+  m_Text: 
 --- !u!222 &1248212188
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6141,7 +6157,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1931284109
 RectTransform:
   m_ObjectHideFlags: 0
@@ -28955,6 +28971,7 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 256
+  dialog: {fileID: 11400000, guid: 48832fdc37a3ddf4094e9d83d7b8c83a, type: 2}
 --- !u!1 &4734921796269680303 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4734921795887603535, guid: 61d4c67def4633549b1ec3bae76929e3, type: 3}
