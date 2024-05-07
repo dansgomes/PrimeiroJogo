@@ -19,24 +19,12 @@ MonoBehaviour:
   - actorName: "Mo\xE7o"
     profile: {fileID: -418448762, guid: d10356e5e76c2154482685cf19ed24d3, type: 3}
     sentence:
-      portuguese: "Ol\xE1, aventureiro! Tudo em cima?"
-      english: 
-      spanish: 
+      portuguese: "Ol\xE1, aventureiro! "
+      english: 'Hello, adventurer! '
+      spanish: Hola!
   - actorName: "Her\xF3i"
     profile: {fileID: 300572915, guid: 4c9b7b25169a87143bf6a1e75cfc6bd8, type: 3}
     sentence:
       portuguese: Tudo bem?
-      english: 
-      spanish: 
-  - actorName: "Mo\xE7o"
-    profile: {fileID: 1015812395, guid: d10356e5e76c2154482685cf19ed24d3, type: 3}
-    sentence:
-      portuguese: Tudo certo!
-      english: 
-      spanish: 
-  - actorName: "Her\xF3i"
-    profile: {fileID: 48606179, guid: 4c9b7b25169a87143bf6a1e75cfc6bd8, type: 3}
-    sentence:
-      portuguese: "Que \xF3timo!"
-      english: 
-      spanish: 
+      english: Everything alright?
+      spanish: "est\xE1s bien?"
