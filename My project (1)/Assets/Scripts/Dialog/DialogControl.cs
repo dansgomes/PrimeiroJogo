@@ -26,7 +26,7 @@ public class DialogControl : MonoBehaviour
     public float typingSpeed; //velocidade da fala
 
     //variaveis de controle
-    private bool isShowing; //se a janela está visível
+    public bool isShowing; //se a janela está visível
     private int index; //index das sentenças
     private string[] sentences;
 
