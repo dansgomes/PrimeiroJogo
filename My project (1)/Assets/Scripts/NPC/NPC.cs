@@ -5,7 +5,7 @@ using UnityEngine;
 public class NPC : MonoBehaviour
 {
     public float speed;
-    private float initialSpeed = 2;
+    private float initialSpeed;
 
     private int index;
     private Animator anim;
@@ -31,7 +31,7 @@ public class NPC : MonoBehaviour
             anim.SetBool("isWalking", true);
         }
 
-        transform.position = Vector2.MoveTowards(transform.position, paths[index].position, speed = Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, paths[index].position, speed * Time.deltaTime);
 
         if (Vector2.Distance(transform.position, paths[index].position) < 0.1f)
         {
