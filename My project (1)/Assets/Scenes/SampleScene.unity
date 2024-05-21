@@ -29254,11 +29254,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8096701980688552432, guid: 435f23368bbbd174487da89a439e7e46, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.97
+      value: -4.81
       objectReference: {fileID: 0}
     - target: {fileID: 8096701980688552432, guid: 435f23368bbbd174487da89a439e7e46, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.57
+      value: 4.03
       objectReference: {fileID: 0}
     - target: {fileID: 8096701980688552432, guid: 435f23368bbbd174487da89a439e7e46, type: 3}
       propertyPath: m_LocalPosition.z
@@ -29468,6 +29468,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 190331634, guid: 9759ee2fb6faeed4888103c54dd60a6f, type: 3}
+      propertyPath: treeHealth
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 190331634, guid: 9759ee2fb6faeed4888103c54dd60a6f, type: 3}
+      propertyPath: woodPrefab
+      value: 
+      objectReference: {fileID: 1136160148535350423, guid: 435f23368bbbd174487da89a439e7e46, type: 3}
     - target: {fileID: 8393455363404253685, guid: 9759ee2fb6faeed4888103c54dd60a6f, type: 3}
       propertyPath: m_RootOrder
       value: 9
