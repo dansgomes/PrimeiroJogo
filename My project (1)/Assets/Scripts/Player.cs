@@ -14,7 +14,11 @@ public class Player : MonoBehaviour
     private bool _isRunning;
     private bool _isRolling;
     private bool _isCutting;
+    private bool _isDigging;
+
     private Vector2 _direction;
+
+    private int handlingObj;
 
     public Vector2 direction
     {
@@ -40,6 +44,12 @@ public class Player : MonoBehaviour
         set => _isCutting = value; 
     }
 
+    public bool IsDigging
+    {
+        get => _isDigging;
+        set => _isDigging = value;
+    }
+
     private void Start()
     {
         rig = GetComponent<Rigidbody2D>();
@@ -48,11 +58,21 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            handlingObj = 0;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            handlingObj = 1;
+        }
+
         OnInput();
         OnRun();
         OnRolling();
         OnCutting();
-
+        OnDig();
     }
 
     private void FixedUpdate()
@@ -63,19 +83,42 @@ public class Player : MonoBehaviour
     #region Movement
 
 
+    void OnDig()
+    {
+        if(handlingObj == 1)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                IsDigging = true;
+                speed = 0;
+            }
+
+            if (Input.GetMouseButtonUp(0))
+            {
+                IsDigging = false;
+                speed = InitialSpeed;
+            }
+        }
+        
+    }
+
     void OnCutting()
     {
-        if (Input.GetMouseButtonDown(0))
+        if(handlingObj == 0)
         {
-            IsCutting = true;
-            speed = 0;
-        }
+            if (Input.GetMouseButtonDown(0))
+            {
+                IsCutting = true;
+                speed = 0;
+            }
 
-        if (Input.GetMouseButtonUp(0))
-        {
-            IsCutting = false;
-            speed = InitialSpeed;
+            if (Input.GetMouseButtonUp(0))
+            {
+                IsCutting = false;
+                speed = InitialSpeed;
+            }
         }
+        
     }
 
     void OnInput()
