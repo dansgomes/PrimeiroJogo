@@ -4804,6 +4804,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   percentage: 50
+  fishPrefabs: {fileID: 1655571175863139473, guid: daea0a893a7a0d0489be4e14738d4024, type: 3}
 --- !u!61 &551126473
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5104,6 +5105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3539e6f704193d4693ab006275f39bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPaused: 0
   speed: 5
   runSpeed: 8
   rollSpeed: 12
