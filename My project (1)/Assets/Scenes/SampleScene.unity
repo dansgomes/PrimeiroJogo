@@ -9095,12 +9095,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b35beb141b240af4db87f8e7f44b8cc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  houseColl: {fileID: 174297817}
-  houseSprite: {fileID: 1041039864}
-  point: {fileID: 156546183}
+  woodAmount: 2
   startColor: {r: 1, g: 1, b: 1, a: 0.23529412}
   endColor: {r: 1, g: 1, b: 1, a: 1}
   timeAmount: 5
+  houseColl: {fileID: 174297817}
+  houseSprite: {fileID: 1041039864}
+  point: {fileID: 156546183}
 --- !u!61 &1041974621
 BoxCollider2D:
   m_ObjectHideFlags: 0
