@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class PlayerAnim : MonoBehaviour
 {
+    [Header("Attack Settings")]
+    [SerializeField] private Transform attackPoint;
+    [SerializeField] private float radius;
+    [SerializeField] private LayerMask enemyLayer;
 
     private Player player;
     private Animator anim;
@@ -98,6 +102,25 @@ public class PlayerAnim : MonoBehaviour
 
     #endregion
 
+    #region Attack
+
+    public void OnAttack()
+    {
+        Collider2D hit = Physics2D.OverlapCircle(attackPoint.position, radius, enemyLayer);
+
+        if(hit != null)
+        {
+            //atacou o inimigo
+            Debug.Log("acertou o inimigo");
+        }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.DrawWireSphere(attackPoint.position, radius);
+    }
+
+    #endregion
     //é chamado quando jogador pressiona o botão de ação na água
     public void OnCastingStarted()
     {
@@ -126,7 +149,7 @@ public class PlayerAnim : MonoBehaviour
     {
         if (!isHitting)
         {
-            anim.SetTrigger("hit");
+            anim.SetTrigger("Hit");
             isHitting = true;
         }
         
