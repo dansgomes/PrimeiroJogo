@@ -17,7 +17,7 @@ MonoBehaviour:
   sentence: 
   dialogs:
   - actorName: "Mo\xE7o"
-    profile: {fileID: -418448762, guid: d10356e5e76c2154482685cf19ed24d3, type: 3}
+    profile: {fileID: 21300000, guid: d2a2e5a5324cead48bd588734389f419, type: 3}
     sentence:
       portuguese: "Ol\xE1, aventureiro! "
       english: 'Hello, adventurer! '
@@ -26,5 +26,11 @@ MonoBehaviour:
     profile: {fileID: 300572915, guid: 4c9b7b25169a87143bf6a1e75cfc6bd8, type: 3}
     sentence:
       portuguese: Tudo bem?
+      english: Everything alright?
+      spanish: "est\xE1s bien?"
+  - actorName: "Mo\xE7o"
+    profile: {fileID: 21300000, guid: d2a2e5a5324cead48bd588734389f419, type: 3}
+    sentence:
+      portuguese: "Tudo bom e voc\xEA?"
       english: Everything alright?
       spanish: "est\xE1s bien?"

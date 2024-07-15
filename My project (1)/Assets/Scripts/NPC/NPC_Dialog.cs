@@ -12,6 +12,9 @@ public class NPC_Dialog: MonoBehaviour
     bool playerHit;
 
     private List<string> sentences = new List<string>();
+    private List<string> actorName = new List<string>();
+    private List<Sprite> actorSprite = new List<Sprite>();
+
 
     private void Start()
     {
@@ -23,7 +26,7 @@ public class NPC_Dialog: MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.E) && playerHit)
         {
-            DialogControl.instance.Speech(sentences.ToArray());
+            DialogControl.instance.Speech(sentences.ToArray(), actorName.ToArray(), actorSprite.ToArray());
         }
     }
 
@@ -47,7 +50,8 @@ public class NPC_Dialog: MonoBehaviour
 
             }
 
-
+            actorName.Add(dialog.dialogs[i].actorName);
+            actorSprite.Add(dialog.dialogs[i].profile);
             
         }
     }
