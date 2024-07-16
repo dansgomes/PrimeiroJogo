@@ -5655,7 +5655,7 @@ MonoBehaviour:
   isPaused: 0
   speed: 3
   runSpeed: 8
-  rollSpeed: 12
+  rollSpeed: 6
   handlingObj: 0
 --- !u!95 &593949947
 Animator:
